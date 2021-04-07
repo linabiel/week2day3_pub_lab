@@ -7,12 +7,12 @@ class Pub:
     def add_money_to_till(self, amount):
         self.till += amount
 
-    def check_customer_age(self, age):
-        if age >= 18:
+    def check_customer_age(self, customer):
+        if customer.age >= 18:
             return True
         return False
 
-    def refuse_service(self, drunkeness):
-        if drunkeness >= 30:
-            return True
-        else:
+    def refuse_service(self, customer):
+        if customer.drunkeness >= 30:
+            return False
+        return True
