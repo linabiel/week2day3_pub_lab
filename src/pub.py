@@ -11,3 +11,8 @@ class Pub:
         if age >= 18:
             return True
         return False
+
+    def refuse_service(self, drunkeness):
+        if drunkeness >= 30:
+            return True
+        else:
